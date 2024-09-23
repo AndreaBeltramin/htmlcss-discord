@@ -12,7 +12,7 @@ a {
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 3.3rem;
 }
 
 h2,
@@ -64,12 +64,13 @@ p {
 	background-color: white;
 }
 
-.first-section {
+.header-section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 490px;
+	height: 500px;
 }
+
 .header-box {
 	display: flex;
 	flex-wrap: wrap;
@@ -106,12 +107,12 @@ p {
 }
 
 /*MAIN*/
-.second-section {
+.first-section {
 	background-color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 500px;
+	height: 600px;
 }
 
 .container-box {
@@ -134,12 +135,18 @@ p {
 	padding-top: 35px;
 }
 
-.third-section {
+.second-section {
 	background-image: url(../img/wave.svg);
+	background-color: rgb(246, 246, 246);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 900px;
+	height: 600px;
+}
+.even-row > .first-box {
+	background-image: url(../img/item2.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .even-row {
@@ -147,8 +154,16 @@ p {
 	flex-direction: row-reverse;
 }
 
+.bigger-section {
+	background-image: url(../img/wave.svg);
+	background-color: rgb(246, 246, 246);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 1000px;
+}
+
 .green-box {
-	background-color: rgb(34, 136, 34);
 	height: 900px;
 	width: 100%;
 	text-align: center;
@@ -158,17 +173,21 @@ p {
 	background-image: url(../img/stars.svg);
 }
 
-.button {
+button {
 	margin-top: 30px;
 	color: white;
 	background-color: rgb(114, 137, 218);
+	border-style: none;
+	border-radius: 20px;
+	padding: 10px;
+	font-size: 1.25rem;
 }
 
 /*FOOTER*/
 
 .footer-background {
 	background-color: rgb(34, 38, 41);
-	height: 570px;
+	height: 600px;
 	padding: 80px 0;
 	display: flex;
 	flex-direction: column;
@@ -181,7 +200,7 @@ p {
 	display: flex;
 	justify-content: center;
 	border-bottom: rgb(76, 89, 132) solid;
-	height: 280px;
+	height: 400px;
 }
 
 .first-footer-box {
