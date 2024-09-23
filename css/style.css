@@ -148,6 +148,18 @@ p {
 	align-items: center;
 	height: 600px;
 }
+
+.third-section {
+	background-color: rgb(246, 246, 246);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 600px;
+}
+
+.third-section > .container-box > .first-box {
+	background-image: url(../img/item3.svg);
+}
 .even-row > .first-box {
 	background-image: url(../img/item2.svg);
 	background-repeat: no-repeat;
@@ -173,6 +185,7 @@ p {
 	width: 100%;
 	text-align: center;
 }
+
 .green-box > div > div {
 	font-size: 2rem;
 	background-image: url(../img/stars.svg);
@@ -229,11 +242,12 @@ button {
 	width: 25%;
 	height: 500px;
 }
+
 .footer-item > div {
 	line-height: 40px;
 }
 
-.footer-box {
+.footer-box-bottom {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
