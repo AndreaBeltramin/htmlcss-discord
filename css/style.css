@@ -5,6 +5,10 @@
 	padding: 0;
 }
 
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 /*UTILS*/
 a {
 	text-decoration: none;
@@ -16,154 +20,152 @@ h1 {
 }
 
 h2 {
-	font-size: 2rem;
-	color: rgb(114, 137, 218);
+	font-size: 2.9rem;
 }
 
 h3 {
 	color: rgb(114, 137, 218);
-	font-size: 1.5rem;
+	font-size: 2.5rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 1.2rem;
+	color: rgb(114, 137, 218);
 }
 
 p {
 	padding: 30px 0;
+	font-size: 1.2rem;
+	line-height: 30px;
+}
+
+button {
 	font-size: 1.3rem;
+	border-style: none;
+	border-radius: 20px;
+	padding: 10px;
+	font-size: 1rem;
+}
+
+i {
+	color: white;
+	font-size: 2rem;
+	padding-right: 20px;
 }
 
 /*HEADER*/
-.page-header {
-	background-image: url(../img/jumbo.png);
-	padding: 20px;
-	background-size: cover;
-	background-repeat: no-repeat;
+
+.header-background {
+	background-color: rgb(37, 94, 233);
 }
 
-.container {
-	margin: 0 auto;
-	width: 1000px;
-	max-width: 100%;
+.header-container {
+	width: 1100px;
 	display: flex;
-	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	padding: 20px;
 }
 
 .logo {
 	width: 20%;
-	background-image: url(../img/logo.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
 }
 
 .link {
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	width: 60%;
 }
 
 .login {
-	width: 6%;
+	width: 20%;
 	text-align: end;
-	padding: 8px;
+}
+
+.login-button {
 	color: rgb(35, 39, 42);
-	border-radius: 25%;
 	background-color: white;
 }
 
 .header-section {
+	background-image: url(../img/jumbo.png);
+	background-position-y: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 500px;
+	height: 450px;
 }
 
 .header-box {
+	width: 750px;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
-	align-items: stretch;
 	justify-content: center;
-	height: 300px;
-	width: 775px;
 	color: white;
-	font-size: 1.25rem;
 }
 
 .header-box > p {
 	text-align: center;
+	padding: 30px 0 15px;
 }
 
-.download {
-	border-style: none;
-	border-radius: 20px;
-	background-color: white;
+.download-button {
 	color: rgb(35, 39, 42);
-	padding: 10px;
+	background-color: white;
 	margin-right: 30px;
-	font-size: 1.25rem;
 }
 
-.open-discord {
-	border-style: none;
-	border-radius: 20px;
-	background-color: rgb(35, 39, 42);
+.open-discord-button {
 	color: white;
-	padding: 10px;
-	font-size: 1.25rem;
+	background-color: rgb(35, 39, 42);
 }
 
 /*MAIN*/
-.first-section {
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 600px;
-}
 
-.container-box {
+.container {
 	width: 1000px;
 	max-width: 100%;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 80px 0;
 }
 
 .first-box {
-	height: 400px;
+	height: 450px;
 	width: 60%;
 	background-image: url(../img/item1.svg);
-	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .second-box {
-	height: 400px;
+	height: 450px;
 	width: 40%;
 	padding-top: 35px;
+	padding-left: 20px;
+}
+
+.wave {
+	color: rgb(246, 246, 246);
+	display: block;
+}
+
+.wave-white {
+	color: white;
+	display: block;
 }
 
 .second-section {
-	background-image: url(../img/wave.svg);
 	background-color: rgb(246, 246, 246);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 600px;
-}
-
-.third-section {
-	background-color: rgb(246, 246, 246);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 600px;
-}
-
-.third-section > .container-box > .first-box {
-	background-image: url(../img/item3.svg);
-}
-.even-row > .first-box {
-	background-image: url(../img/item2.svg);
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .even-row {
@@ -171,42 +173,65 @@ p {
 	flex-direction: row-reverse;
 }
 
+.even-row > .first-box {
+	background-image: url(../img/item2.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.even-row > .second-box {
+	padding: 35px 20px 0 0;
+}
+
+.third-section > .container > .first-box {
+	background-image: url(../img/item3.svg);
+	background-size: contain;
+}
+
 .bigger-section {
-	background-image: url(../img/wave.svg);
 	background-color: rgb(246, 246, 246);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 1200px;
 }
 
-.green-box {
-	height: 900px;
-	width: 100%;
+.bigger-container {
+	width: 1000px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 80px 0;
+}
+
+.bigger-box > .big-image {
+	width: 1100px;
+	position: relative;
+	right: 50px;
+}
+
+.bigger-box > .call-to-action {
+	margin: 60px 0;
 	text-align: center;
+	position: relative;
 }
 
-.green-box > div > div {
-	font-size: 2rem;
-	background-image: url(../img/stars.svg);
-	margin: 50px;
+.bigger-box .call-to-action .stars {
+	position: absolute;
+	bottom: 50%;
+	right: 15%;
+	width: 700px;
 }
 
-button {
-	margin-top: 30px;
+.bigger-box .download-mac {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.bigger-box .download-mac-button {
 	color: white;
 	background-color: rgb(114, 137, 218);
-	border-style: none;
-	border-radius: 20px;
-	padding: 10px;
-	font-size: 1.25rem;
 }
 
 /*FOOTER*/
 
 .footer-background {
 	background-color: rgb(34, 38, 41);
-	height: 700px;
 	padding: 80px 0;
 	display: flex;
 	flex-direction: column;
@@ -214,7 +239,7 @@ button {
 }
 
 .footer-container {
-	width: 1000px;
+	width: 1100px;
 	max-width: 100%;
 	display: flex;
 	justify-content: center;
@@ -227,8 +252,20 @@ button {
 	width: 30%;
 }
 
+.language {
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	color: white;
+}
+
+.language i {
+	padding-left: 10px;
+}
+
 .immagine-footer {
-	height: 20px;
+	height: 30px;
+	padding-right: 10px;
 }
 
 .second-footer-box {
@@ -251,26 +288,20 @@ button {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	align-items: flex-start;
-	width: 1000px;
+	width: 1100px;
 	max-width: 100%;
-	margin-top: 10px;
+	margin-top: 30px;
 }
 
-.footer-nav {
-	background-image: url(../img/logo.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	padding: 40px;
+.footer-logo {
+	width: 50px;
 }
 
 .footer-item > div {
 	color: white;
 }
 
-.registrati {
-	padding: 10px;
-	background-color: rgb(76, 89, 132);
+.registrati-button {
 	color: white;
-	border-radius: 25%;
+	background-color: rgb(114, 137, 218);
 }
